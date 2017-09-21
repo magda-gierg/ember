@@ -1,3 +1,18 @@
+## First app in Ember
+created on first Ember workshop
+
+## Installation
+
+* `git clone <repository-url>` this repository
+* `npm install`
+
+## Running / Development
+
+* `ember serve`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
+
+
+<!---
 # library-app
 
 This README outlines the details of collaborating on this Ember application.
@@ -48,3 +63,4 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+---!>
