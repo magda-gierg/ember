@@ -7,6 +7,9 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('about', function() {
+    this.route('wellington');
+  });
 });
 
 export default Router;
