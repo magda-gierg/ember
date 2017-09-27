@@ -10,6 +10,7 @@ Router.map(function() {
   this.route('about', function() {
     this.route('wellington');
   });
+  this.route('contact');
 });
 
 export default Router;
