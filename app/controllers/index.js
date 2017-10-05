@@ -12,10 +12,15 @@ export default Ember.Controller.extend({
     saveInvitation() {
 const email = this.get("emailAddress");
 const newInvittation = this.store.createRecord('invitation', {email:email}) //first email is from models.invitation.js; second is const email
-newInvittation.save();
+newInvittation.save().then(response => {
+  this.set('responseMessage', `Thank you! We have just saved your email address: ${this.get('emailAddress')}`);
+  this.set('emailAddress', '');
+});
+}
+
+
       // alert(`Saving of the following email address is in progress: ${this.get('emailAddress')}`);
       // this.set('responseMessage', `Thank you! We've just saved your email address: ${this.get('emailAddress')}`);
       // this.set('emailAddress', '');
     }
-  }
-});
+  });

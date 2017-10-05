@@ -11,6 +11,10 @@ Router.map(function() {
     this.route('wellington');
   });
   this.route('contact');
+
+  this.route('admin', function() {
+    this.route('invitations');
+  });
 });
 
 export default Router;
