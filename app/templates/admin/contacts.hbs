@@ -9,11 +9,11 @@
     </tr>
   </thead>
   <tbody>
-  {{#each model as |contacts|}}
+  {{#each model as |contact|}}
     <tr>
-      <th>{{contacts.id}}</th>
-      <td>{{contacts.email}}</td>
-      <td>{{contacts.message}}</td>
+      <th>{{contact.id}}</th>
+      <td>{{contact.email}}</td>
+      <td>{{contact.message}}</td>
     </tr>
   {{/each}}
   </tbody>
