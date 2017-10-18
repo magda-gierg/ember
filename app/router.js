@@ -7,6 +7,7 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+
   this.route('about', function() {
     this.route('wellington');
   });
@@ -15,6 +16,9 @@ Router.map(function() {
   this.route('admin', function() {
     this.route('invitations');
   });
+  this.route('libraries', function() {
+     this.route('new');
+   });  
 });
 
 export default Router;
